@@ -185,6 +185,10 @@ while True:
         else:
             push(player_hand, dealer_hand)
 
+    if player_hand.value == 21:
+        print('Blackjack! You win!')
+        player_wins(player_hand, player_chips)
+
     print("\nPlayer's winnings stand at", player_chips.total)
 
     new_game = input("Would you like to play another hand? Enter 'y' or 'n' ")
